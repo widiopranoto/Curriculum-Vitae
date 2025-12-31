@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Infografis - Widio Pranoto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        .gradient-sidebar {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+        }
+
+        .badge-national { background-color: #fee2e2; color: #991b1b; }
+        .badge-provincial { background-color: #fef3c7; color: #92400e; }
+        .badge-international { background-color: #dcfce7; color: #166534; }
+
+        .profile-img-container {
+            width: 160px;
+            height: 160px;
+            margin: 0 auto 1.5rem;
+            border-radius: 50%;
+            border: 4px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
+            background-color: #e5e7eb;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-img-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 10px; }
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row overflow-hidden rounded-2xl shadow-2xl bg-white">
+        
+        <!-- Sidebar Kiri -->
+        <aside class="md:w-1/3 gradient-sidebar text-white p-8">
+            <div class="text-center mb-8">
+                <!-- Bagian Foto Profil -->
+                <div class="profile-img-container shadow-lg">
+                    <!-- Placeholder untuk file WIDIO KHAKI ASLI.jpg -->
+                    <img src="WIDIO KHAKI ASLI.jpg" alt="Foto Widio Pranoto">
+                </div>
+                
+                <h1 class="text-2xl font-bold leading-tight">Widio Pranoto, S.Pd., M.Si.</h1>
+                <p class="text-blue-200 mt-2">Guru Ahli Madya / Pembina Tk. I</p>
+                <p class="text-xs text-blue-100 mt-1 opacity-75">NIP: 19790519 200604 1 010</p>
+            </div>
+
+            <div class="space-y-6">
+                <section>
+                    <h3 class="text-lg font-semibold border-b border-blue-400 pb-2 mb-4">Kontak</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-blue-300"></i>
+                            <span>Kavling SD Ngembal Kulon 1, Kudus, Jawa Tengah</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-blue-300"></i>
+                            <span>0856 4070 4046</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3 text-blue-300"></i>
+                            <span class="break-all">widiopranoto@gmail.com</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h3 class="text-lg font-semibold border-b border-blue-400 pb-2 mb-4">Lisensi & Keahlian</h3>
+                    <div class="space-y-3">
+                        <div class="bg-white/10 p-3 rounded-lg">
+                            <p class="text-xs font-bold text-blue-200">TOEIC (2024)</p>
+                            <p class="text-sm">Score: 965 / 990</p>
+                        </div>
+                        <div class="bg-white/10 p-3 rounded-lg">
+                            <p class="text-xs font-bold text-blue-200">Bahasa</p>
+                            <p class="text-sm">English for Journalism (US State Dept)</p>
+                        </div>
+                        <div class="bg-white/10 p-3 rounded-lg">
+                            <p class="text-xs font-bold text-blue-200">Teknologi</p>
+                            <p class="text-sm">Vue.js, HTML, CSS, Gemini AI</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <h3 class="text-lg font-semibold border-b border-blue-400 pb-2 mb-4">Pendidikan</h3>
+                    <div class="space-y-4 text-sm">
+                        <div>
+                            <p class="font-bold">James Madison Univ, USA</p>
+                            <p class="text-blue-200 italic">Audit Courses (EdTech & TESL)</p>
+                            <p class="text-xs opacity-75">2012</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Universitas Diponegoro</p>
+                            <p class="text-blue-200 italic">Magister Ilmu Administrasi</p>
+                            <p class="text-xs opacity-75">2008 - 2011</p>
+                        </div>
+                        <div>
+                            <p class="font-bold">Univ. Negeri Semarang</p>
+                            <p class="text-blue-200 italic">S1 Pendidikan Bahasa Inggris</p>
+                            <p class="text-xs opacity-75">1999 - 2005</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="md:w-2/3 p-6 md:p-10 space-y-8 overflow-y-auto">
+            
+            <!-- Pengalaman Kerja & Tugas Tambahan -->
+            <section>
+                <h2 class="text-2xl font-bold text-blue-900 flex items-center mb-6">
+                    <i class="fas fa-briefcase mr-3"></i> Karir & Pengalaman
+                </h2>
+                <div class="relative border-l-2 border-blue-200 ml-3 space-y-8 pb-4">
+                    <div class="relative pl-8">
+                        <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+                        <h4 class="font-bold text-lg">Guru Bahasa Inggris - SMKN 2 Pati</h4>
+                        <p class="text-sm text-gray-500 mb-2">2006 — Sekarang</p>
+                        <div class="flex flex-wrap gap-2 mt-2">
+                            <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-medium border border-blue-100">Wakasek Kurikulum (2024-2026)</span>
+                            <span class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-xs font-medium border border-blue-100">Wakasek Humas (2020-2022)</span>
+                        </div>
+                    </div>
+
+                    <div class="relative pl-8">
+                        <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-400 border-4 border-white"></div>
+                        <h4 class="font-bold text-lg">Tutor Universitas Terbuka</h4>
+                        <p class="text-sm text-gray-500 mb-1">2020 — Sekarang</p>
+                        <p class="text-sm text-gray-600">Mata Kuliah: Bahasa Inggris (Niaga/SD), Perilaku Organisasi.</p>
+                    </div>
+
+                    <div class="relative pl-8">
+                        <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-blue-400 border-4 border-white"></div>
+                        <h4 class="font-bold text-lg">Pendidikan Guru Penggerak (PGP)</h4>
+                        <p class="text-sm text-gray-600">Instruktur Nasional, Fasilitator (Angkatan 8 & 11), dan Pendamping Praktik (Angkatan 4).</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Prestasi Highlight -->
+            <section>
+                <h2 class="text-2xl font-bold text-blue-900 flex items-center mb-6">
+                    <i class="fas fa-trophy mr-3"></i> Prestasi Utama
+                </h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div class="card p-4 border-l-4 border-green-500">
+                        <span class="badge-international text-[10px] font-bold px-2 py-0.5 rounded uppercase">Internasional</span>
+                        <h4 class="font-bold text-sm mt-1">Awardee ILEP USA</h4>
+                        <p class="text-xs text-gray-600">AMINEF & US Dept of State (2012)</p>
+                    </div>
+                    <div class="card p-4 border-l-4 border-red-500">
+                        <span class="badge-national text-[10px] font-bold px-2 py-0.5 rounded uppercase">Nasional</span>
+                        <h4 class="font-bold text-sm mt-1">Juara 1 Inobel Guru SMK</h4>
+                        <p class="text-xs text-gray-600">Tingkat Nasional (2019)</p>
+                    </div>
+                    <div class="card p-4 border-l-4 border-red-500">
+                        <span class="badge-national text-[10px] font-bold px-2 py-0.5 rounded uppercase">Nasional</span>
+                        <h4 class="font-bold text-sm mt-1">Awardee Microkredensial</h4>
+                        <p class="text-xs text-gray-600">LPDP & Flinders Univ Australia (2025)</p>
+                    </div>
+                    <div class="card p-4 border-l-4 border-amber-500">
+                        <span class="badge-provincial text-[10px] font-bold px-2 py-0.5 rounded uppercase">Provinsi</span>
+                        <h4 class="font-bold text-sm mt-1">Guru Penggerak Rekognisi</h4>
+                        <p class="text-xs text-gray-600">Angkatan 8 (2023)</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Karya Ilmiah & Penelitian -->
+            <section>
+                <h2 class="text-2xl font-bold text-blue-900 flex items-center mb-6">
+                    <i class="fas fa-book-open mr-3"></i> Publikasi & Best Practice
+                </h2>
+                <div class="space-y-4">
+                    <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-blue-800 text-sm">GEMA LITERASI-NUMERASI (GEMALITNUM)</h4>
+                        <p class="text-xs text-gray-600 mt-1 italic">Best Practice Transformasi Pendidikan Berbasis Data (2025)</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-blue-800 text-sm">Diferensiasi Pembelajaran dengan Gemini AI</h4>
+                        <p class="text-xs text-gray-600 mt-1 italic">Penelitian Tindakan Kelas - Keterampilan Speaking (2024)</p>
+                    </div>
+                    <div class="p-4 bg-gray-50 rounded-xl border border-gray-200">
+                        <h4 class="font-bold text-blue-800 text-sm">Point Cam (Talking Points and Flipcam)</h4>
+                        <p class="text-xs text-gray-600 mt-1 italic">Metode Pelatihan Debat Bahasa Inggris (2021)</p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="text-center mt-8 text-gray-500 text-sm">
+        <p>&copy; 2025 Widio Pranoto - Curriculum Vitae Infographic</p>
+    </footer>
+
+</body>
+</html>
